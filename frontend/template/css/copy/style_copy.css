@@ -1,60 +1,4 @@
 /*----------------------------------------*/
-/*  0.  Variables
-/*----------------------------------------*/
-
-:root {
-    /* Основные цвета */
-    --color-primary: #D7B474; /* Золотой */
-    --color-secondary: #10100E; /* Тёмный фон */
-    --color-light: #ffffff; /* Белый */
-    --color-grey-light: #b1b1b1; /* Светло-серый текст */
-    --color-grey-dark: #131313; /* Тёмно-серый фон */
-    --color-accent: #ccc; /* Светло-серый акцент */
-    --color-placeholder: #999999; /* Цвет текста по умолчанию */
-
-    /* Вспомогательные цвета */
-    --color-background: #0c0c0b; /* Тёмный фон футера */
-    --color-highlight: #444; /* Тёмно-серый для акцентов */
-    --color-border: #d9d9d9; /* Цвет для границ */
-
-    /* Дополнительные */
-    --color-heading: #ddd; /* Заголовки */
-    --color-link-hover: #252525; /* Цвет ссылки при наведении */
-}
-
-/*----------------------------------------*/
-/*  1.  Fonts
-/*----------------------------------------*/
-@font-face {
-    font-family: "Great Vibes";
-    src: url('../fonts/great_vibes/GreatVibes-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Marck Script";
-    src: url('../fonts/marck_script/MarckScript-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Lobster";
-    src: url('../fonts/lobster/Lobster-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Neucha";
-    src: url('../fonts/neucha/Neucha-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
-/*----------------------------------------*/
 /*  1.  Theme default CSS
 /*----------------------------------------*/
 
@@ -92,17 +36,17 @@ img {max-width:100%;
 }
 p {
 	margin:0 0 15px;
-    color: var(--color-grey-light);
+    color: #b1b1b1;
 }
 h1, h2, h3, h4, h5, h6 {
-    margin: 0 0 10px;
-    color: #fff;
-    font-weight: 600;
-    font-family: 'Marck Script', sans-serif;
+   margin: 0 0 10px;
+   color: #fff;
+   font-weight: 600;
+   font-family: 'Poppins', sans-serif;
 }
 h1{
-    font-size: 42px;
-    line-height: 48px;
+   font-size: 42px;
+   line-height: 48px;
 }
 h2{
     font-size: 34px;
@@ -129,14 +73,14 @@ h6{
 	text-decoration:none;
 }
 a:hover {
-  color: var(--color-link-hover);
+  color: #252525;
   text-decoration: none;
 }
 a:active, a:hover {
   outline: 0 none;
 }
 hr {
-    border-color: var(--color-border);
+    border-color: #d9d9d9;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -149,13 +93,13 @@ padding: 0;
 	clear:both;
 }
 a:focus {
-    color: var(--color-primary);
+    color: #D7B474;
     text-decoration: none;
 }
 body {
   background: #fff none repeat scroll 0 0;
-  color: var(--color-placeholder);
-  font-family: 'Neucha', sans-serif;
+  color: #999999;
+  font-family: 'Nunito', sans-serif;
   font-size: 16px;
   text-align: left;
   overflow-x: hidden;
@@ -171,7 +115,7 @@ body {
 }
 .browserupgrade {
     margin: 0.2em 0;
-    background: var(--color-accent);
+    background: #ccc;
     color: #000;
     padding: 0.2em 0;
 }
@@ -201,7 +145,7 @@ body {
 }
 .section-headline h3 {
     font-size: 38px;
-    color: var(--color-heading);
+    color: #ddd;
     margin-bottom: 40px;
     line-height: 48px;
     text-transform: uppercase;
@@ -209,7 +153,7 @@ body {
 }
 .top-head {
     text-transform: uppercase;
-    color: var(--color-primary);
+    color: #D7B474;
     font-weight: 600;
     font-size: 15px;
     position: relative;
@@ -220,7 +164,7 @@ body {
     position: absolute;
     content: "";
     top: 13px;
-    background: var(--color-primary);
+    background: #D7B474;
     width: 40px;
     height: 1px;
     left: -50px;
@@ -229,7 +173,7 @@ body {
     position: absolute;
     content: "";
     top: 13px;
-    background: var(--color-primary);
+    background: #D7B474;
     width: 40px;
     height: 1px;
     right: -50px;
@@ -268,7 +212,7 @@ body {
     background: #161616;
 }
 .bg-color-2{
-    background: var(--color-grey-dark);
+    background: #131313;
 }
 .parallax-bg{
     position:relative;
@@ -280,7 +224,7 @@ body {
     top:0;
     width:100%;
     height:100%;
-    background:var(--color-secondary);
+    background:#10100E;
     opacity:.7;
     content:"";
 	z-index: -1;
@@ -308,7 +252,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
     top: 0;
     width: 100%;
     z-index: 999999;
-    background: var(--color-secondary);
+    background: #10100E;
 }
 .logo {
   display: block;
@@ -325,7 +269,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 .team-content h4 a::after {
     position: absolute;
     content: "";
-    background: var(--color-primary);
+    background: #D7B474;
     width: 40px;
     height: 40px;
     left: -30px;
@@ -351,7 +295,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
     display: inline-block;
     padding: 10px 10px 10px 10px;
     text-decoration: none;
-    color: var(--color-accent);
+    color: #ccc;
     text-transform: uppercase;
     letter-spacing: 0.80px;
 }
@@ -360,7 +304,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
     display: block;
     padding: 0;
     text-decoration: none;
-    color: var(--color-heading);
+    color: #ddd;
     font-size: 13px;
     text-transform: uppercase;
 }
@@ -373,7 +317,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 }
 .stick .main-menu ul.navbar-nav li a,
 .stick .header-social >li>a {
-    color: var(--color-highlight);
+    color: #444;
 }
 .navbar-default .navbar-toggle {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
@@ -383,14 +327,14 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
     background-color: transparent;
-    color: var(--color-primary);
+    color: #D7B474;
 }
 .navbar.navbar-default {
     float: right;
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
     background: none;
-    color:var(--color-primary);
+    color:#D7B474;
 }
 .logo-pic {
     position: relative;
@@ -403,7 +347,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
    display: block;
 }
 .slide-right.slide-open .slide-hamburger {
-    /* right: 29%; */
+    right: 29%;
     top: 15px;
 }
 
@@ -411,11 +355,11 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 /*  3. Mobile Menu Area
 /*----------------------------------------*/
 .mobile-menu-area {
-    background: var(--color-secondary) none repeat scroll 0 0;
+    background: #10100E none repeat scroll 0 0;
     padding: 10px 0px;
 }
 .mean-container a.meanmenu-reveal span {
-    background: var(--color-heading) none repeat scroll 0 0;
+    background: #ddd none repeat scroll 0 0;
     display: block;
     height: 2px;
     margin-top: 5px;
@@ -424,7 +368,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 .mean-container .mean-nav {
     float: left;
     width: 100%;
-    background: var(--color-secondary);
+    background: #10100E;
 }
 .mean-container .mean-bar::after {
     content: "";
@@ -436,11 +380,11 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
     font-weight: 500;
 }
 .mean-container a.meanmenu-reveal {
-    color: var(--color-heading);
+    color: #ddd;
     font-weight: 300;
 }
 .mean-container a.meanmenu-reveal:hover {
-    color:var(--color-heading);
+    color:#ddd;
 }
 .mean-container .mean-nav ul {
     list-style-type: none;
@@ -449,8 +393,8 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
     width: 100%;
 }
 .mean-container .mean-nav ul li a {
-    background: var(--color-secondary) none repeat scroll 0 0;
-    color: var(--color-heading);
+    background: #10100E none repeat scroll 0 0;
+    color: #ddd;
     display: block;
     float: left;
     font-size: 16px;
@@ -466,7 +410,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
     margin-bottom: 20px;
 }
 .mean-container .mean-nav ul li a.mean-expand {
-    color: var(--color-heading);
+    color: #ddd;
     line-height: 17px;
 }
 .mean-container .mean-nav ul li {
@@ -474,24 +418,24 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
     border: none;
 }
 .stick .main-menu ul.navbar-nav li.active a{
-    color: var(--color-primary);
+    color: #D7B474;
 }
-/* .slide-hamburger:hover .slide-hamburger-icon{
+.slide-hamburger:hover .slide-hamburger-icon{
     margin: 5px 0px;
-} */
+}
 
 /*--------------------------------*/
 /*  4. Intro Area
 /*--------------------------------*/
 .slide-area {
-    /* background: rgba(0, 0, 0, 0) url(../img/background/s2.jpg) no-repeat scroll bottom center / cover; */
+    background: rgba(0, 0, 0, 0) url(../img/background/s2.jpg) no-repeat scroll bottom center / cover;
     width: 100%;
     height: 100%;
     position: relative;
     z-index: 1;
 }
 .title1 {
-    color: var(--color-primary);
+    color: #D7B474;
     font-weight: 300;
     font-size: 17px;
     letter-spacing: 0.80px;
@@ -534,7 +478,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
     height: 0;
     top: 50%;
     left: 50%;
-    background: var(--color-primary);
+    background: #D7B474;
     opacity: 0;
     -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
     -moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
@@ -545,7 +489,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 }
 .slide-btn:hover{
     color: #fff;
-    border: 1px solid var(--color-primary);
+    border: 1px solid #D7B474;
 }
 .slide-btn:hover:after {
     height: 260%;
@@ -570,7 +514,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
     margin: 20px 0px 0px 15px;
 }
 .about-content p {
-    color: var(--color-grey-light);
+    color: #b1b1b1;
 }
 .sub-content h4 {
     font-size: 20px;
@@ -582,7 +526,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
     padding: 10px 30px;
     position: relative;
     margin-top: 30px;
-    border-left: 2px solid var(--color-primary);
+    border-left: 2px solid #D7B474;
 }
 .side-head.top-head::before {
     display: none;
@@ -648,7 +592,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 .services-content {
     padding: 30px 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    background: var(--color-grey-dark);
+    background: #131313;
 }
 .services-content h4 {
     color: #fff;
@@ -662,7 +606,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 .services-content h4::after {
     position: absolute;
     content: "";
-    background: var(--color-primary);
+    background: #D7B474;
     width: 40px;
     height: 40px;
     left: -6px;
@@ -678,7 +622,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
     left: 0;
 }
 .services-btn:hover{
-    color: var(--color-primary);
+    color: #D7B474;
 }
 .services-image{
     overflow: hidden;
@@ -696,9 +640,51 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
     transition: 0.5s;
 }
 
+/*--------------------------------*/
+/* 7. Counter Area
+/*--------------------------------*/
+/* .counter-area {
+    background: rgba(0,0,0,0.70) url(img/background/s1.jpg) no-repeat scroll center center / cover; 
+    display: block;
+    overflow: hidden;
+	position: relative;
+	z-index: 1;
+    background-attachment: fixed;
+}
+.counter-area::after{
+    position: absolute;
+    content: "";
+    background: rgba(0,0,0,0.70);
+    width: 100%;
+    height: 100%;
+    left:0;
+    top:0;
+	z-index: -1;
+}
+.fun_text {
+    padding: 75px 10px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #191919;
+    background: rgba(0,0,0,0.50);
+    width: 260px;
+    height: 260px;
+}
+.fun_text span {
+    color: #D7B474;
+    display: block;
+    font-size: 40px;
+    padding-bottom: 10px;
+    line-height: 40px;
+}
+.fun_text > h4 {
+    color: #fff;
+    font-size: 18px;
+    text-transform: capitalize;
+} */
 
 /*--------------------------------*/
-/* 7. Work Area
+/* 8. Work Area
 /*--------------------------------*/
 .project-area {
     position: relative;
@@ -764,11 +750,508 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 }
 
 /*----------------------------------------*/
-/*  8. Footer Area
+/*  9. banner Area
+/*----------------------------------------*/
+/* .banner-area {
+    background: rgba(0,0,0,0.70) url(img/background/s1.jpg) no-repeat scroll center center / cover; 
+    display: block;
+    overflow: hidden;
+	position: relative;
+	z-index: 1;
+    background-attachment: fixed;
+}
+.banner-area::after{
+    position: absolute;
+    content: "";
+    background: rgba(0,0,0,0.70);
+    width: 100%;
+    height: 100%;
+    left:0;
+    top:0;
+	z-index: -1;
+}
+.banner-content h2 {
+    margin: 0 auto;
+    color: #fff;
+    font-size: 50px;
+    max-width: 954px;
+    line-height: 62px;
+    margin-bottom: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.banner-contact .slide-btn{
+    margin: 10px 0px 0px ;
+} */
+
+/*----------------------------------------*/
+/*  10. Team Area css
+/*----------------------------------------*/
+/* .single-member {
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.06);
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.team-hover {
+    padding: 15px 0 0px;
+    text-align: center;
+    transition: all 0.4s ease 0s;
+}
+.single-member .team-img {
+    display: block;
+    position: relative;
+}
+.single-member .team-img a {
+    display: block;
+}
+.team-content {
+    position: absolute;
+    top: 70%;
+    content: "";
+    left: 0;
+    right: 0;
+    transition: 0.5s;
+    background: rgba(19,19,19,0.75) none repeat scroll 0 0;
+    padding: 30px 20px;
+    width: 100%;
+    height: 200px;
+}
+.team-content h4 a {
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+.team-content h4 a::after {
+    position: absolute;
+    content: "";
+    background: #D7B474;
+    width: 40px;
+    height: 40px;
+    left: -30px;
+    top: -15px;
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0.6;
+    transition: 0.5s;
+}
+.team-content p {
+    margin-bottom: 0;
+    color: #b1b1b1;
+}
+.team-content h4 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.team-content .social-icon{
+  margin-top: 15px;
+     opacity: 0;
+}
+.social-icon li{
+    display: inline-block;
+    margin: 0px 2px;
+}
+.social-icon li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #222;
+    color: #fff;
+    border-radius:50%;
+    font-size: 18px;
+    text-align: center;
+    line-height: 39px;
+    background: #222;
+}
+.social-icon li a:hover{
+    border:1px solid #D7B474;
+    color:#fff;
+	background: #D7B474;
+}
+.single-member .team-img::after{
+    background: rgba(19,19,19,0.90) none repeat scroll 0 0;
+    width: 100%;
+    height: 0%;
+    position: absolute;
+    content: "";
+    left: 0;
+    top:0;
+    transition: 0.5s;
+	box-shadow: 2px 2px 20px #ddd;
+}
+.single-member:hover .team-img::after{
+    height: 100%;
+}
+.single-member:hover .team-content .social-icon{
+     opacity: 1;
+}
+.single-member:hover .team-content {
+    opacity: 1;
+     top: 45%;
+    transition: 0.5s;
+    background: transparent;
+}
+.single-member:hover .team-content h4 a::after {
+    left: -15px;
+    top: -10px;
+    transition: 0.5s;
+} */
+
+/*----------------------------------------*/
+/*  11. Blog Area
+/*----------------------------------------*/
+/* .blog-area{
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.single-blog {
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.blog-content {
+    padding: 30px 40px 40px 30px;
+    position: absolute;
+    top: 60%;
+    transition: 0.5s;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.80);
+    text-align: center;
+}
+.blog-content a h4 {
+    font-size: 22px;
+    color: #fff;
+    line-height: 30px;
+    transition: 0.4s;
+}
+.date-type i,
+.admin-type i,
+.comments-type i{
+    color: #D7B474;
+    margin-right: 5px;
+}
+.home-blog .blog-btn{
+    display: none;
+}
+.blog-content a h4:hover{
+    color:#D7B474;
+    transition: 0.4s;
+}
+.blog-meta span {
+    color: #b1b1b1;
+    font-size: 14px;
+    font-weight: 400;
+    padding-right: 10px;
+}
+.admin-type img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 2px solid #D7B474;
+    margin-right: 10px;
+}
+.single-blog:hover .blog-content {
+    transition: 0.5s;
+    top: 45%;
+    background: transparent;
+}
+.single-blog:hover .blog-btn {
+    display: inline-block;
+}
+.blog-meta {
+    margin-bottom: 10px;
+}
+.image-scale {
+    position: relative;
+    transform: scale(1);
+    display: block;
+    transition: 0.5s;
+}
+.image-scale::after{
+    background:#10100E;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left:0;
+    top:0;
+    content: "";
+    opacity: 0;
+}
+.single-blog:hover .image-scale {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.blog-btn {
+    color: #b1b1b1;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.4s ease 0s;
+    position: relative;
+}
+.blog-grid .single-blog:hover .blog-btn:hover {
+    background: transparent;
+    color: #D7B474;
+    transition: 0.4s;
+}
+.blog-btn::after {
+    position: absolute;
+    right: -20px;
+    top: 0px;
+    content: "\e628";
+    color: #b1b1b1;
+    font-family: themify;
+    font-size: 16px;
+    transition: 0.5s;
+}
+.blog-grid .single-blog:hover .blog-btn:hover::after {
+    color: #D7B474;
+    transition: 0.4s;
+    right: -30px;
+}
+.single-blog:hover .image-scale::after{
+    opacity:0.8;
+} */
+
+/*----------------------------------------
+ 12.Reviews Area Css
+----------------------------------------*/
+/* .reviews-area{
+    position: relative;
+}
+.reviews-area .section-headline h3 {
+    font-size: 40px;
+    color: #ddd;
+    margin-bottom: 20px;
+    line-height: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.reviews-area .section-headline p{
+    margin-right: 30px;
+}
+.single-testi {
+    margin: 0px 0px 50px;
+}
+.clients-text{
+    padding: 30px 25px;
+    position: relative;
+    background-color: #1c1c1c;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+.reviews-content .clients-text::after {
+    position: absolute;
+    left: 40px;
+    bottom: -28px;
+    content: "";
+    border-top: 30px solid #1c1c1c;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+}
+.guest-details {
+    display: inline-block;
+    text-align: left;
+    margin-top: 50px;
+    position: relative;
+}
+.reviews-content {
+    margin-bottom: 5px;
+}
+.testi-text h4 {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-bottom: 0px;
+    letter-spacing: 1px;
+}
+.testi-text p {
+    margin-bottom: 0px;
+}
+.client-rating {
+    margin-bottom: 10px;
+}
+.testi-text span a{
+    color:#D7B474;
+}
+.testi-text h5 {
+    color: #2a354e;
+    font-size: 20px;
+}
+.client-rating a {
+    display: inline-block;
+    color: #fec731;
+    font-size: 20px;
+    padding: 0px 5px 0px 0px;
+}
+.reviews-content .active.center .single-testi .clients-text{
+    background: #1c1c1c;
+}
+.reviews-content .active.center .single-testi .clients-text p{
+    color:#fff;
+}
+.reviews-content .active.center .clients-text::after {
+    position: absolute;
+    left: 40px;
+    bottom: -28px;
+    content: "";
+    border-top: 30px solid #1c1c1c;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+}
+.testimonial-carousel.owl-carousel.owl-theme .owl-controls .owl-dots div.owl-dot > span {
+    background: #2a354e none repeat scroll 0 0;
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+    -moz-transition:0.4s;
+    -webkit-transition:0.4s;
+    -o-transition:0.4s;
+    -ms-transition:0.4s;
+    transition:0.4s;
+    border-radius: 50%;
+}
+.testimonial-carousel.owl-carousel.owl-theme .owl-controls .owl-dots {
+    bottom: -10px;
+    display: block;
+    left: 50%;
+    margin-left: -40px;
+    position: absolute;
+}
+.testimonial-content {
+    margin-bottom: 15px;
+}
+.testimonial-carousel.owl-carousel.owl-theme .owl-controls .owl-dots div.owl-dot {
+    display: inline-block;
+    margin: 0 3px;
+}
+.testimonial-carousel.owl-carousel.owl-theme .owl-controls .owl-dots div.owl-dot.active span {
+    background: #D7B474;
+    width: 30px;
+    border-radius: 3px;
+} */
+ 
+/*----------------------------------------*/
+/* 13. Brand area css
+/*----------------------------------------*/
+/* .brand-area{
+    position: relative;
+}
+.single-brand-item a {
+    background:rgba(215,180,116,0.5);
+    display: block;
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+}
+.single-brand-item a img {
+    padding: 38px 0px;
+} */
+/*----------------------------------------*/
+/*  14.	Contact area css
+/*----------------------------------------*/
+/* .contact-form {
+    margin-left: 10px;
+}
+.contact-form input[type="text"], .contact-form input[type="email"] {
+    border: 1px solid #1c1c1c;
+    border-radius: 0;
+    height: 52px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    width: 100%;
+    background: #1c1c1c;
+}
+.contact-form textarea#message {
+    border: 1px solid #1c1c1c;
+    border-radius: 0px;
+    height: 170px;
+    padding: 20px;
+    width: 100%;
+    background: #1c1c1c;
+}
+.contact-btn {
+    border: 1px solid #ddd;
+    color: #ddd;
+    padding: 9px 40px;
+    display: inline-block;
+    margin-top: 10px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-size: 15px;
+    background: transparent
+}
+.contact-btn:hover{
+    color: #fff;
+    transition: 0.5s;
+    background: #D7B474;
+    border: 1px solid #D7B474;
+    transform: translateY(-5px);
+}
+.map-area {
+    border-radius: 5px;
+    margin-right: 10px;
+}
+#googleMap {
+    border-radius: 5px;
+} */
+
+/*----------------------------------------*/
+/* 15. Photoshot Css
+/*----------------------------------------*/
+/* .single-photo{
+    position: relative;
+    display: block;
+}
+.single-photo::after {
+    background: rgba(0,0,0,0.80) none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    opacity: 0;
+    transition: 0.4s;
+}
+.single-photo a{
+    position: absolute;
+    left: 0;
+    top: 55%;
+    color: #fff;
+    z-index: 99;
+    right: 0;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: -15px;
+    opacity: 0;
+    transition: 0.5s;
+}
+.single-photo:hover::after{
+    opacity: 1;
+    transition: 0.4s;
+}
+.single-photo:hover a{
+    top: 50%;
+    opacity: 1;
+    transition: 0.5s;
+} */
+/*----------------------------------------*/
+/*  16. Footer Area
 /*----------------------------------------*/
 .footer-area {
     padding: 100px 0;
-    background: var(--color-secondary);
+    background: #10100E;
 }
 .footer-logo {
     margin-bottom: 20px;
@@ -800,12 +1283,12 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 }
 .footer-icons ul li a:hover{
     color: #fff;
-    border: 1px solid var(--color-primary);
-    background: var(--color-primary);
+    border: 1px solid #D7B474;
+    background: #D7B474;
     transition: 0.4s;
 }
 .footer-tags li a:hover{
-    color: var(--color-primary);
+    color: #D7B474;
 }
 .footer-contact li a {
     color: #fff;
@@ -821,7 +1304,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
     font-size: 16px;
     margin-right: 10px;
     line-height: 34px;
-    color:var(--color-primary);
+    color:#D7B474;
 }
 .subs-feilds {
     background: #1c1c1c ;
@@ -838,17 +1321,17 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
     border-radius: 0;
     width: 66%;
     float: left;
-    background: var(--color-background) ;
+    background: #0c0c0b ;
 }
 .suscribe-input button {
-    background: var(--color-primary);
+    background: #D7B474;
     border: none;
     color: #fff;
     font-size: 16px;
     padding: 10px 5px;
     width: 34%;
     height: 46px;
-    border-left: 1px solid var(--color-primary);
+    border-left: 1px solid #D7B474;
 }
 .footer-icons {
     margin-top: 20px;
@@ -858,17 +1341,17 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
     float: left;
 }
 .footer-contacts p span {
-    color: var(--color-primary);
+    color: #D7B474;
     font-weight: 700;
 }
 .footer-area-bottom {
-    background: var(--color-background) none repeat scroll 0 0;
+    background: #0c0c0b none repeat scroll 0 0;
     padding: 25px 0;
     text-align: center;
 }
 .copyright-text a:hover{
 	text-decoration: underline;
-	color:var(--color-primary);
+	color:#D7B474;
 }
 .copyright-text a {
     color: #fff;
@@ -878,11 +1361,117 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
     color: #fff;
 }
 .copyright a {
-    color: var(--color-primary);
+    color: #D7B474;
 }
 
 /*----------------------------------------*/
-/*  9. Breadcumbs Area
+/*  17. Home 02 area
+/*----------------------------------------*/
+/* .intro-content-2{
+    position: relative;
+    z-index: 1;
+}
+.intro-content-2::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(19,19,19, 0.70) none repeat scroll 0 0;
+    content: "";
+}
+.slide-content {
+    margin-top: 30px;
+}
+.slider-content {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    z-index: 3;
+    left: 0;
+    margin: 0 auto;
+    margin-top: -120px;
+}
+.intro-carousel.owl-carousel.owl-theme .owl-controls .owl-nav div.owl-prev, 
+.intro-carousel.owl-carousel.owl-theme .owl-controls .owl-nav div.owl-next {
+    color: #fff;
+    font-size: 28px;
+    margin-top: -22px;
+    position: absolute;
+    top: 50%;;
+    text-align: center;
+    line-height: 67px;
+    opacity: 0;
+    border:1px solid #D7B474;
+    width: 64px;
+    height: 64px;
+	border-radius: 50%;
+    background: #D7B474;
+}
+.intro-carousel.owl-carousel.owl-theme .owl-controls .owl-nav div.owl-prev{
+    left: 10%;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -o-transition: 0.4s;
+    -ms-transition: 0.4s;
+}
+.intro-carousel.owl-carousel.owl-theme .owl-controls .owl-nav div.owl-next {
+    right: 10%;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -o-transition: 0.4s;
+    -ms-transition: 0.4s;
+}
+.intro-carousel.owl-carousel.owl-theme:hover .owl-controls .owl-nav div.owl-next{
+    right: 2%;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -o-transition: 0.4s;
+    -ms-transition: 0.4s;
+    opacity: 1;
+}
+.intro-carousel.owl-carousel.owl-theme:hover .owl-controls .owl-nav div.owl-prev{
+    left: 2%;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -o-transition: 0.4s;
+    -ms-transition: 0.4s;
+    opacity: 1;
+}
+.intro-carousel.owl-carousel.owl-theme:hover .owl-controls .owl-nav div.owl-next:hover,
+.intro-carousel.owl-carousel.owl-theme:hover .owl-controls .owl-nav div.owl-prev:hover{
+    color:#D7B474;
+    background:transparent;
+    border: 1px solid #D7B474;
+}
+.intro-carousel .owl-item .title1{
+    transform: translateY(100%);
+    opacity: 0;
+    transition: all 1s ease-in-out 0.5s;
+}
+.intro-carousel .owl-item .title2{
+    transform: translateY(100%);
+    opacity: 0;
+    transition: all 1s ease-in-out 1s;
+}
+.intro-carousel .owl-item .slider-button{
+    transform: translateY(100%);
+    opacity: 0;
+    transition: all 1s ease-in-out 1.5s;
+}
+.intro-carousel .owl-item.active .title1,
+.intro-carousel .owl-item.active .title2,
+.intro-carousel .owl-item.active .slider-button{
+    transform: translateY(0);
+    opacity: 1;
+}
+.intro-carousel .owl-item.active .slider-images img{
+	transform: scale(1.1);
+	transition: 10s;
+} */
+
+/*----------------------------------------*/
+/*  16. Breadcumbs Area
 /*----------------------------------------*/
 /* .page-area {
     background: url(img/background/bread-bg.jpg);
@@ -915,12 +1504,12 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 }
 .bread-headline p {
     font-size: 15px;
-    color: var(--color-heading);
+    color: #ddd;
     margin-bottom: 0px;
 } */
 
 /*----------------------------------------*/
-/*  10. Blog Details
+/*  18. Blog Details
 /*----------------------------------------*/
 /* .blog-details {
     padding-top: 90px;
@@ -947,7 +1536,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 }
 .comments-list-img img {
     border-radius: 50%;
-    border: 1px solid var(--color-primary);
+    border: 1px solid #D7B474;
 }
 .comments-content-wrap {
     color: #c5c5c5;
@@ -1026,10 +1615,10 @@ span.email-notes{
 	background: transparent;
 }
 .comments-content-wrap span a {
-    color: var(--color-primary);
+    color: #D7B474;
 }
 .comments-content-wrap span a:hover {
-    color: var(--color-primary);
+    color: #D7B474;
 }
 .comment-respond .add-btn.contact-btn {
     background:transparent;
@@ -1046,9 +1635,9 @@ span.email-notes{
     text-transform: uppercase;
 }
 .comment-respond .add-btn.contact-btn:hover{
-    background: var(--color-primary);
+    background: #D7B474;
 	color: #fff;
-    border: 1px solid var(--color-primary);
+    border: 1px solid #D7B474;
     transition: 0.5s;
     transform: translateY(-4px);
 }
@@ -1124,7 +1713,7 @@ span.email-notes{
     height: 80px;
     object-fit: cover;
     border-radius: 50%;
-    border: 1px solid var(--color-primary);
+    border: 1px solid #D7B474;
 }
 .post-img {
     display: inline-block;
@@ -1146,11 +1735,11 @@ span.email-notes{
     font-size: 15px;
 }
 .pst-content p a:hover{
-    color: var(--color-primary);
+    color: #D7B474;
 } */
  
 /*----------------------------------------*/
-/*  11.	Animation  CSS
+/*  30.	Animation  CSS
 /*----------------------------------------*/
 .rotateme {
     animation-name: rotateme;

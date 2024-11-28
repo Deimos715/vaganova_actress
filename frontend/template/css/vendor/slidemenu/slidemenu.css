@@ -186,7 +186,7 @@
       right: 0%;
   }
   .slide-right.slide-open .slide-hamburger {
-      right: 50px;
+      /* right: 50px; */
       top: 40px;
   }
   

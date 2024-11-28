@@ -62,12 +62,12 @@
    /*--------------------------
     scrollUp
    ---------------------------- */
-       $.scrollUp({
-           scrollText: 'scroll top',
-           easingType: 'linear',
-           scrollSpeed: 900,
-           animation: 'fade'
-       });
+    //    $.scrollUp({
+    //        scrollText: 'scroll top',
+    //        easingType: 'linear',
+    //        scrollSpeed: 900,
+    //        animation: 'fade'
+    //    });
        
        
    /*--------------------------
@@ -80,189 +80,189 @@
    /*----------------------------
     Counter js active
    ------------------------------ */
-       var count = $('.counter');
-       count.counterUp({
-           delay: 40,
-           time: 3000
-       });
+    //    var count = $('.counter');
+    //    count.counterUp({
+    //        delay: 40,
+    //        time: 3000
+    //    });
        
        
    /*--------------------------
     Parallax
    ---------------------------- */	
-       var parallaxeffect = $(window);
-       parallaxeffect.stellar({
-           responsive: true,
-           positionProperty: 'position',
-           horizontalScrolling: false
-       });
+    //    var parallaxeffect = $(window);
+    //    parallaxeffect.stellar({
+    //        responsive: true,
+    //        positionProperty: 'position',
+    //        horizontalScrolling: false
+    //    });
        
    /*---------------------
     Award carousel
    ---------------------*/
-       var award_carousel = $('.award-carousel');
-       award_carousel.owlCarousel({
-           loop:true,
-           nav:false,		
-           autoplay:false,
-           dots:false,
-           responsive:{
-               0:{
-                   items:1
-               },
-               700:{
-                   items:2
-               },
-               1000:{
-                   items:3
-               }
-           }
-       });
+    //    var award_carousel = $('.award-carousel');
+    //    award_carousel.owlCarousel({
+    //        loop:true,
+    //        nav:false,		
+    //        autoplay:false,
+    //        dots:false,
+    //        responsive:{
+    //            0:{
+    //                items:1
+    //            },
+    //            700:{
+    //                items:2
+    //            },
+    //            1000:{
+    //                items:3
+    //            }
+    //        }
+    //    });
    /*---------------------
     photo carousel
    ---------------------*/
-       var photo_carousel = $('.photo-carousel');
-       photo_carousel.owlCarousel({
-           loop:true,
-           nav:false,		
-           autoplay:false,
-           dots:false,
-           responsive:{
-               0:{
-                   items:1
-               },
-               700:{
-                   items:3
-               },
-               1000:{
-                   items:5
-               }
-           }
-       });
+    //    var photo_carousel = $('.photo-carousel');
+    //    photo_carousel.owlCarousel({
+    //        loop:true,
+    //        nav:false,		
+    //        autoplay:false,
+    //        dots:false,
+    //        responsive:{
+    //            0:{
+    //                items:1
+    //            },
+    //            700:{
+    //                items:3
+    //            },
+    //            1000:{
+    //                items:5
+    //            }
+    //        }
+    //    });
    /*---------------------
     Testimonial carousel
    ---------------------*/
-       var test_carousel = $('.testimonial-carousel');
-       test_carousel.owlCarousel({
-           loop:true,
-           nav:false,
-           dots:true,
-           margin:50,
-           autoplay:false,
-           center: true,
-           responsive:{
-               0:{
-                   items:1
-               },
-               768:{
-                   items:1
-               },
-               1000:{
-                   items:2
-               }
-           }
-       });
+    //    var test_carousel = $('.testimonial-carousel');
+    //    test_carousel.owlCarousel({
+    //        loop:true,
+    //        nav:false,
+    //        dots:true,
+    //        margin:50,
+    //        autoplay:false,
+    //        center: true,
+    //        responsive:{
+    //            0:{
+    //                items:1
+    //            },
+    //            768:{
+    //                items:1
+    //            },
+    //            1000:{
+    //                items:2
+    //            }
+    //        }
+    //    });
    /*--------------------------
         slider carousel
    ---------------------------- */
-       var intro_carousel = $('.intro-carousel');
-       intro_carousel.owlCarousel({
-           loop:true,
-           nav:true,		
-           autoplay:false,
-           dots:false,
-           navText: ["<i class='ti-angle-left'></i>","<i class='ti-angle-right'></i>"],
-           responsive:{
-               0:{
-                   items:1
-               },
-               600:{
-                   items:1
-               },
-               1000:{
-                   items:1
-               }
-           }
-       }); 
+    //    var intro_carousel = $('.intro-carousel');
+    //    intro_carousel.owlCarousel({
+    //        loop:true,
+    //        nav:true,		
+    //        autoplay:false,
+    //        dots:false,
+    //        navText: ["<i class='ti-angle-left'></i>","<i class='ti-angle-right'></i>"],
+    //        responsive:{
+    //            0:{
+    //                items:1
+    //            },
+    //            600:{
+    //                items:1
+    //            },
+    //            1000:{
+    //                items:1
+    //            }
+    //        }
+    //    }); 
    /*--------------------------
         Brand carousel
    ---------------------------- */
-       var brand_carousel = $('.brand-carousel');
-       brand_carousel.owlCarousel({
-           loop:true,
-           nav:false,		
-           autoplay:false,
-           dots:false,
-           margin:30,
-           responsive:{
-               0:{
-                   items:1
-               },
-               600:{
-                   items:3
-               },
-               1000:{
-                   items:5
-               }
-           }
-       }); 
+    //    var brand_carousel = $('.brand-carousel');
+    //    brand_carousel.owlCarousel({
+    //        loop:true,
+    //        nav:false,		
+    //        autoplay:false,
+    //        dots:false,
+    //        margin:30,
+    //        responsive:{
+    //            0:{
+    //                items:1
+    //            },
+    //            600:{
+    //                items:3
+    //            },
+    //            1000:{
+    //                items:5
+    //            }
+    //        }
+    //    }); 
        
    /*--------------------------
         contact-from
    ---------------------------- */
-       $("#contactForm").on("submit", function (event) {
-           if (event.isDefaultPrevented()) {
-               // handle the invalid form...
-               formError();
-               submitMSG(false, "Did you fill in the form properly?");
-           } else {
-               // everything looks good!
-               event.preventDefault();
-               submitForm();
-           }
-       });
-       function submitForm(){
-           // Initiate Variables With Form Content
-           var name = $("#name").val();
-           var email = $("#email").val();
-           var msg_subject = $("#msg_subject").val();
-           var message = $("#message").val();
+    //    $("#contactForm").on("submit", function (event) {
+    //        if (event.isDefaultPrevented()) {
+    //            // handle the invalid form...
+    //            formError();
+    //            submitMSG(false, "Did you fill in the form properly?");
+    //        } else {
+    //            // everything looks good!
+    //            event.preventDefault();
+    //            submitForm();
+    //        }
+    //    });
+    //    function submitForm(){
+    //        // Initiate Variables With Form Content
+    //        var name = $("#name").val();
+    //        var email = $("#email").val();
+    //        var msg_subject = $("#msg_subject").val();
+    //        var message = $("#message").val();
    
    
-           $.ajax({
-               type: "POST",
-               url: "assets/contact.php",
-               data: "name=" + name + "&email=" + email + "&msg_subject=" + msg_subject + "&message=" + message,
-               success : function(text){
-                   if (text == "success"){
-                       formSuccess();
-                   } else {
-                       formError();
-                       submitMSG(false,text);
-                   }
-               }
-           });
-       }
+    //        $.ajax({
+    //            type: "POST",
+    //            url: "assets/contact.php",
+    //            data: "name=" + name + "&email=" + email + "&msg_subject=" + msg_subject + "&message=" + message,
+    //            success : function(text){
+    //                if (text == "success"){
+    //                    formSuccess();
+    //                } else {
+    //                    formError();
+    //                    submitMSG(false,text);
+    //                }
+    //            }
+    //        });
+    //    }
    
-       function formSuccess(){
-           $("#contactForm")[0].reset();
-           submitMSG(true, "Message Submitted!")
-       }
+    //    function formSuccess(){
+    //        $("#contactForm")[0].reset();
+    //        submitMSG(true, "Message Submitted!")
+    //    }
    
-       function formError(){
-           $("#contactForm").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-               $(this).removeClass();
-           });
-       }
+    //    function formError(){
+    //        $("#contactForm").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+    //            $(this).removeClass();
+    //        });
+    //    }
    
-       function submitMSG(valid, msg){
-           if(valid){
-               var msgClasses = "h3 text-center tada animated text-success";
-           } else {
-               var msgClasses = "h3 text-center text-danger";
-           }
-           $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
-       }
+    //    function submitMSG(valid, msg){
+    //        if(valid){
+    //            var msgClasses = "h3 text-center tada animated text-success";
+    //        } else {
+    //            var msgClasses = "h3 text-center text-danger";
+    //        }
+    //        $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
+    //    }
        
        
    

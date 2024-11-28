@@ -183,7 +183,7 @@
         top: 17%;
     }    
     .slide-right.slide-open .slide-hamburger {
-        right: 51%;
+        /* right: 51%; */
     }    
     .map-area {
         margin-right: 0px;

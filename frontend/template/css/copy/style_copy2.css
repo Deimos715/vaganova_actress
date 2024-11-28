@@ -1,5 +1,5 @@
 /*----------------------------------------*/
-/*  0.  Variables
+/*  1.  Variables
 /*----------------------------------------*/
 
 :root {
@@ -11,47 +11,16 @@
     --color-grey-dark: #131313; /* Тёмно-серый фон */
     --color-accent: #ccc; /* Светло-серый акцент */
     --color-placeholder: #999999; /* Цвет текста по умолчанию */
-
+  
     /* Вспомогательные цвета */
     --color-background: #0c0c0b; /* Тёмный фон футера */
     --color-highlight: #444; /* Тёмно-серый для акцентов */
     --color-border: #d9d9d9; /* Цвет для границ */
-
+  
     /* Дополнительные */
     --color-heading: #ddd; /* Заголовки */
     --color-link-hover: #252525; /* Цвет ссылки при наведении */
-}
-
-/*----------------------------------------*/
-/*  1.  Fonts
-/*----------------------------------------*/
-@font-face {
-    font-family: "Great Vibes";
-    src: url('../fonts/great_vibes/GreatVibes-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Marck Script";
-    src: url('../fonts/marck_script/MarckScript-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Lobster";
-    src: url('../fonts/lobster/Lobster-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Neucha";
-    src: url('../fonts/neucha/Neucha-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+  }
 
 
 /*----------------------------------------*/
@@ -92,17 +61,17 @@ img {max-width:100%;
 }
 p {
 	margin:0 0 15px;
-    color: var(--color-grey-light);
+    color: #b1b1b1;
 }
 h1, h2, h3, h4, h5, h6 {
-    margin: 0 0 10px;
-    color: #fff;
-    font-weight: 600;
-    font-family: 'Marck Script', sans-serif;
+   margin: 0 0 10px;
+   color: #fff;
+   font-weight: 600;
+   font-family: 'Poppins', sans-serif;
 }
 h1{
-    font-size: 42px;
-    line-height: 48px;
+   font-size: 42px;
+   line-height: 48px;
 }
 h2{
     font-size: 34px;
@@ -129,14 +98,14 @@ h6{
 	text-decoration:none;
 }
 a:hover {
-  color: var(--color-link-hover);
+  color: #252525;
   text-decoration: none;
 }
 a:active, a:hover {
   outline: 0 none;
 }
 hr {
-    border-color: var(--color-border);
+    border-color: #d9d9d9;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -154,8 +123,8 @@ a:focus {
 }
 body {
   background: #fff none repeat scroll 0 0;
-  color: var(--color-placeholder);
-  font-family: 'Neucha', sans-serif;
+  color: #999999;
+  font-family: 'Nunito', sans-serif;
   font-size: 16px;
   text-align: left;
   overflow-x: hidden;
@@ -171,7 +140,7 @@ body {
 }
 .browserupgrade {
     margin: 0.2em 0;
-    background: var(--color-accent);
+    background: #ccc;
     color: #000;
     padding: 0.2em 0;
 }
@@ -201,7 +170,7 @@ body {
 }
 .section-headline h3 {
     font-size: 38px;
-    color: var(--color-heading);
+    color: #ddd;
     margin-bottom: 40px;
     line-height: 48px;
     text-transform: uppercase;
@@ -268,7 +237,7 @@ body {
     background: #161616;
 }
 .bg-color-2{
-    background: var(--color-grey-dark);
+    background: #131313;
 }
 .parallax-bg{
     position:relative;
@@ -280,7 +249,7 @@ body {
     top:0;
     width:100%;
     height:100%;
-    background:var(--color-secondary);
+    background:#10100E;
     opacity:.7;
     content:"";
 	z-index: -1;
@@ -308,7 +277,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
     top: 0;
     width: 100%;
     z-index: 999999;
-    background: var(--color-secondary);
+    background: #10100E;
 }
 .logo {
   display: block;
@@ -351,7 +320,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
     display: inline-block;
     padding: 10px 10px 10px 10px;
     text-decoration: none;
-    color: var(--color-accent);
+    color: #ccc;
     text-transform: uppercase;
     letter-spacing: 0.80px;
 }
@@ -360,7 +329,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
     display: block;
     padding: 0;
     text-decoration: none;
-    color: var(--color-heading);
+    color: #ddd;
     font-size: 13px;
     text-transform: uppercase;
 }
@@ -373,7 +342,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 }
 .stick .main-menu ul.navbar-nav li a,
 .stick .header-social >li>a {
-    color: var(--color-highlight);
+    color: #444;
 }
 .navbar-default .navbar-toggle {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
@@ -411,11 +380,11 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 /*  3. Mobile Menu Area
 /*----------------------------------------*/
 .mobile-menu-area {
-    background: var(--color-secondary) none repeat scroll 0 0;
+    background: #10100E none repeat scroll 0 0;
     padding: 10px 0px;
 }
 .mean-container a.meanmenu-reveal span {
-    background: var(--color-heading) none repeat scroll 0 0;
+    background: #ddd none repeat scroll 0 0;
     display: block;
     height: 2px;
     margin-top: 5px;
@@ -424,7 +393,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 .mean-container .mean-nav {
     float: left;
     width: 100%;
-    background: var(--color-secondary);
+    background: #10100E;
 }
 .mean-container .mean-bar::after {
     content: "";
@@ -436,11 +405,11 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
     font-weight: 500;
 }
 .mean-container a.meanmenu-reveal {
-    color: var(--color-heading);
+    color: #ddd;
     font-weight: 300;
 }
 .mean-container a.meanmenu-reveal:hover {
-    color:var(--color-heading);
+    color:#ddd;
 }
 .mean-container .mean-nav ul {
     list-style-type: none;
@@ -449,8 +418,8 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
     width: 100%;
 }
 .mean-container .mean-nav ul li a {
-    background: var(--color-secondary) none repeat scroll 0 0;
-    color: var(--color-heading);
+    background: #10100E none repeat scroll 0 0;
+    color: #ddd;
     display: block;
     float: left;
     font-size: 16px;
@@ -466,7 +435,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
     margin-bottom: 20px;
 }
 .mean-container .mean-nav ul li a.mean-expand {
-    color: var(--color-heading);
+    color: #ddd;
     line-height: 17px;
 }
 .mean-container .mean-nav ul li {
@@ -476,15 +445,15 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 .stick .main-menu ul.navbar-nav li.active a{
     color: var(--color-primary);
 }
-/* .slide-hamburger:hover .slide-hamburger-icon{
+.slide-hamburger:hover .slide-hamburger-icon{
     margin: 5px 0px;
-} */
+}
 
 /*--------------------------------*/
 /*  4. Intro Area
 /*--------------------------------*/
 .slide-area {
-    /* background: rgba(0, 0, 0, 0) url(../img/background/s2.jpg) no-repeat scroll bottom center / cover; */
+    background: rgba(0, 0, 0, 0) url(../img/background/s2.jpg) no-repeat scroll bottom center / cover;
     width: 100%;
     height: 100%;
     position: relative;
@@ -570,7 +539,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
     margin: 20px 0px 0px 15px;
 }
 .about-content p {
-    color: var(--color-grey-light);
+    color: #b1b1b1;
 }
 .sub-content h4 {
     font-size: 20px;
@@ -648,7 +617,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 .services-content {
     padding: 30px 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    background: var(--color-grey-dark);
+    background: #131313;
 }
 .services-content h4 {
     color: #fff;
@@ -768,7 +737,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 /*----------------------------------------*/
 .footer-area {
     padding: 100px 0;
-    background: var(--color-secondary);
+    background: #10100E;
 }
 .footer-logo {
     margin-bottom: 20px;
@@ -838,7 +807,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
     border-radius: 0;
     width: 66%;
     float: left;
-    background: var(--color-background) ;
+    background: #0c0c0b ;
 }
 .suscribe-input button {
     background: var(--color-primary);
@@ -862,7 +831,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
     font-weight: 700;
 }
 .footer-area-bottom {
-    background: var(--color-background) none repeat scroll 0 0;
+    background: #0c0c0b none repeat scroll 0 0;
     padding: 25px 0;
     text-align: center;
 }
@@ -915,7 +884,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 }
 .bread-headline p {
     font-size: 15px;
-    color: var(--color-heading);
+    color: #ddd;
     margin-bottom: 0px;
 } */
 
