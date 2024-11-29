@@ -47,6 +47,13 @@
 }
 
 @font-face {
+    font-family: "Monotype Corsiva Regular";
+    src: url('../fonts/monotype_corsiva/Monotype-Corsiva-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: "Neucha";
     src: url('../fonts/neucha/Neucha-Regular.ttf') format('truetype');
     font-weight: normal;
@@ -98,7 +105,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 0 10px;
     color: #fff;
     font-weight: 600;
-    font-family: 'Marck Script', sans-serif;
+    font-family: 'Monotype Corsiva Regular', sans-serif;
 }
 h1{
     font-size: 42px;
@@ -204,11 +211,11 @@ body {
     color: var(--color-heading);
     margin-bottom: 40px;
     line-height: 48px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     letter-spacing: 1px;
 }
 .top-head {
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     color: var(--color-primary);
     font-weight: 600;
     font-size: 15px;
@@ -246,7 +253,7 @@ body {
     height: 20px;
     -webkit-transition-duration: 500ms;
     transition-duration: 500ms;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     -webkit-transform: rotate(-90deg);
     transform: rotate(-90deg);
 }
@@ -352,7 +359,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
     padding: 10px 10px 10px 10px;
     text-decoration: none;
     color: var(--color-accent);
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     letter-spacing: 0.80px;
 }
 .slide-dropdown-menu-item {
@@ -362,7 +369,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
     text-decoration: none;
     color: var(--color-heading);
     font-size: 13px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 .navbar {
     border: medium none;
@@ -432,7 +439,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
     left: 5%;
     position: absolute;
     top: 12px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-weight: 500;
 }
 .mean-container a.meanmenu-reveal {
@@ -495,7 +502,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
     font-weight: 300;
     font-size: 17px;
     letter-spacing: 0.80px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 .title2 {
     font-size: 64px;
@@ -503,7 +510,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
     margin-bottom: 0px;
     color: #fff;
     padding: 20px 0px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     letter-spacing: 1px;
     font-weight: 400;
 }
@@ -518,7 +525,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
     padding: 14px 40px;
     display: inline-block;
     margin: 15px 30px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     position: relative;;
     transition: all 0.3s;
     border: 1px solid #fff;
@@ -562,7 +569,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
     font-size: 38px;
     line-height: 48px;
     margin-bottom: 15px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     letter-spacing: 1px;
     font-weight: 500;
 }
@@ -1211,3 +1218,144 @@ span.email-notes{
 /*----------------------------------------*/
 /* End Pages
 /*----------------------------------------*/
+
+
+/*----------------------------------------*/
+/*  12.	Modal
+/*----------------------------------------*/
+.modal-dialog-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.modal-content {
+    max-width: 900px;
+    width: 100%;
+    background-color: var(--color-grey-dark);
+    color: var(--color-light);
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Стиль кнопки закрытия */
+.modal-header .close {
+    color: var(--color-light);
+    opacity: 1;
+    font-size: 24px;
+    text-shadow: none;
+    transition: color 0.3s ease;
+}
+
+.modal-header .close:hover {
+    color: var(--color-primary);
+}
+
+.modal-header h4 {
+    color: var(--color-light);
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0;
+}
+
+.modal-body p {
+    margin-bottom: 10px;
+    color: var(--color-light);
+}
+
+.modal-body strong {
+    color: var(--color-light);
+    font-weight: bold;
+}
+
+.modal-footer {
+    background-color: var(--color-grey-dark);
+    border-top: none;
+    padding: 10px 15px;
+    text-align: right;
+}
+
+.modal-footer .btn {
+    background-color: var(--color-light);
+    color: var(--color-grey-dark);
+    border: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+}
+
+.modal-footer .btn:hover {
+    background-color: var(--color-grey-dark);
+    color: var(--color-light);
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+/*----------------------------------------*/
+/*  13.	Btn
+/*----------------------------------------*/
+/* Стиль кнопки "Подробнее" */
+.btn-more, .btn-close {
+    padding: 5px 10px;
+    display: inline-block;
+    position: relative;
+    transition: all 0.3s;
+    border: 1px solid #fff;
+    color: #fff;
+    overflow: hidden;
+    z-index: 1;
+    font-size: 16px;
+}
+
+.btn-more:after, .btn-close:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 50%;
+    left: 50%;
+    background: var(--color-primary);
+    opacity: 0;
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    z-index: -1;
+    border-radius: inherit;
+    transition: all 0.3s;
+}
+
+.btn-more:hover, .btn-close:hover {
+    color: #fff;
+    border: 1px solid var(--color-primary);
+}
+
+.btn-more:hover:after, .btn-close:hover:after {
+    height: 260%;
+    width: 260%;
+    opacity: 1;
+}
+
+
+
+
+
