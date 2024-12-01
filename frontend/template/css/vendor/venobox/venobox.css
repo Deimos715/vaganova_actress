@@ -33,7 +33,7 @@
     top:50%; 
     margin-left:-16px; 
     margin-top:-16px;
-    background-image: url(../img/venubox/preload-circle.png);
+    background-image: url(../../../img/venbox/preload-circle.png);
     text-indent: -100px;
     overflow: hidden;
     -webkit-animation: playload 1.4s steps(18) infinite;
@@ -192,7 +192,7 @@
 */
 /* ----- navigation ----- */
 .vbox-close {
-  background: #161617 url("../img/venubox/close.gif") no-repeat scroll 10px center;
+  background: #161617 url("../../../img/venbox/close.gif") no-repeat scroll 10px center;
   color: #fff;
   cursor: pointer;
   display: block;
@@ -221,12 +221,12 @@
 .vbox-prev{
     left: 0;
     border-width: 0 30px 0 10px;
-    background: url(../img/venubox/prev.gif) center center no-repeat;
+    background: url(../../../img/venbox/prev.gif) center center no-repeat;
 }
 .vbox-next{
     right: 0;
     border-width: 0 10px 0 30px;
-    background: url(../img/venubox/next.gif) center center no-repeat;
+    background: url(../../../img/venbox/next.gif) center center no-repeat;
 }
 
 .vbox-title{
