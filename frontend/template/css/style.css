@@ -649,7 +649,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 /* 6. Services area css
 /*----------------------------------------*/
 .single-services {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     position: relative;
     border: 1px solid var(--color-light);
 }
@@ -708,7 +708,71 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 /*--------------------------------*/
 /* 7. Work Area
 /*--------------------------------*/
-.project-area {
+.awesome-img {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.awesome-img img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.single-awesome-project:hover .awesome-img img {
+    transform: scale(1.1);
+}
+
+.awesome-img .vbox-item i {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--color-light);
+    font-size: 30px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.single-awesome-project:hover .awesome-img .vbox-item i {
+    opacity: 1;
+}
+
+/* Карточка */
+.single-awesome-project {
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+}
+
+
+.single-awesome-project:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Адаптивность для изображений */
+@media (max-width: 768px) {
+    .awesome-img img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        transition: transform 0.4s ease;
+    }
+}
+
+@media (max-width: 479px) {
+    .awesome-img img {
+        height: 400px;
+    }
+}
+
+/* .project-area {
     position: relative;
 }
 .single-awesome-project {
@@ -721,7 +785,6 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 .awesome-img{
     display: block;
     width: 100%;
-    /* height: 100%; */
     position: relative;
     overflow: hidden;
 }
@@ -769,7 +832,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 }
 .single-awesome-project:hover .awesome-img .vbox-item i{
     opacity: 1;
-}
+} */
 
 /* Пагинация */
 .portfolio-pagination {
@@ -781,8 +844,8 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
     list-style: none;
     padding: 0;
     margin: 0;
-    display: inline-flex; /* Располагаем элементы в ряд */
-    gap: 10px; /* Расстояние между элементами */
+    display: inline-flex;
+    gap: 10px;
 }
 
 .pagination-item {
@@ -829,7 +892,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 }
 
 /* Адаптивная пагинация */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .pagination-link {
         width: 35px;
         height: 35px;
@@ -838,7 +901,8 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
     .pagination-list {
         gap: 5px;
     }
-}
+} */
+
 
 /*----------------------------------------*/
 /*  8. Footer Area
@@ -1300,7 +1364,7 @@ span.email-notes{
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -1331,7 +1395,7 @@ span.email-notes{
 
 @media (max-width: 576px) {
     .video-card {
-        margin-bottom: 15px;
+        margin-bottom: 20px;
         box-shadow: none;
     }
 
@@ -1354,12 +1418,14 @@ span.email-notes{
 
 .modal-content {
     max-width: 900px;
+    max-height: 700px;
+    overflow-y: auto;
     width: 100%;
     background-color: var(--color-grey-dark);
     color: var(--color-light);
     border: none;
     border-radius: 8px;
-    overflow: hidden;
+    /* overflow: hidden; */
     font-size: 16px;
     line-height: 1.5;
 }
