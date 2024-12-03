@@ -68,6 +68,7 @@
 html, body {
 	height: 100%;
 }
+
 .floatleft {
 	float:left;
 }
@@ -131,16 +132,16 @@ h6{
     font-size: 18px;
     line-height: 28px;
 }
- a {
+a {
 	transition: all 0.3s ease 0s;
 	text-decoration:none;
 }
 a:hover {
-  color: var(--color-link-hover);
-  text-decoration: none;
+    color: var(--color-link-hover);
+    text-decoration: none;
 }
 a:active, a:hover {
-  outline: 0 none;
+    outline: 0 none;
 }
 hr {
     border-color: var(--color-border);
@@ -160,13 +161,13 @@ a:focus {
     text-decoration: none;
 }
 body {
-  background: #fff none repeat scroll 0 0;
-  color: var(--color-placeholder);
-  font-family: 'Neucha', sans-serif;
-  font-size: 16px;
-  text-align: left;
-  overflow-x: hidden;
-  line-height: 28px;
+    background: #fff none repeat scroll 0 0;
+    color: var(--color-placeholder);
+    font-family: 'Neucha', sans-serif;
+    font-size: 16px;
+    text-align: left;
+    overflow-x: hidden;
+    line-height: 28px;
 }
 ::-moz-selection {
     background: #b3d4fc;
@@ -201,10 +202,10 @@ body {
     vertical-align: middle;
 }
 .area-padding {
-  padding: 110px 0;
+    padding: 110px 0;
 }
 .area-padding-2 {
-  padding: 110px 0px 80px;
+    padding: 110px 0px 80px;
 }
 .section-headline h3 {
     font-size: 38px;
@@ -1307,47 +1308,47 @@ span.email-notes{
     animation: bounce 3s infinite ease-in-out;
 }
 @-webkit-keyframes bounce {
-  0% {
-    -webkit-transform: translateY(-5px);
-            transform: translateY(-5px);
-  }
-  50% {
-    -webkit-transform: translateY(10px);
-            transform: translateY(10px);
-  }
-  100% {
-    -webkit-transform: translateY(-5px);
-            transform: translateY(-5px);
-  }
+    0% {
+        -webkit-transform: translateY(-5px);
+                transform: translateY(-5px);
+    }
+    50% {
+        -webkit-transform: translateY(10px);
+                transform: translateY(10px);
+    }
+    100% {
+        -webkit-transform: translateY(-5px);
+                transform: translateY(-5px);
+    }
 }
 
 @keyframes bounce {
-  0% {
-    -webkit-transform: translateY(-5px);
-            transform: translateY(-5px);
-  }
-  50% {
-    -webkit-transform: translateY(10px);
-            transform: translateY(10px);
-  }
-  100% {
-    -webkit-transform: translateY(-5px);
-            transform: translateY(-5px);
-  }
+    0% {
+        -webkit-transform: translateY(-5px);
+                transform: translateY(-5px);
+    }
+    50% {
+        -webkit-transform: translateY(10px);
+                transform: translateY(10px);
+    }
+    100% {
+        -webkit-transform: translateY(-5px);
+                transform: translateY(-5px);
+    }
 }
 
 @-webkit-keyframes popcircle {
-  0% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-  99% {
-    -webkit-transform: scale(1.5);
-    transform: scale(1.5);
-  }
-  100% {
-    opacity: 0;
-  }
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    99% {
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+    }
+    100% {
+        opacity: 0;
+    }
 }
 /*----------------------------------------*/
 /* End Pages
@@ -1357,7 +1358,6 @@ span.email-notes{
 /*----------------------------------------*/
 /*  12.	Video business cards
 /*----------------------------------------*/
-/* Общий стиль карточки */
 .video-card {
     background: var(--color-light);
     border: 1px solid var(--color-light);
@@ -1368,8 +1368,6 @@ span.email-notes{
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-
-/* Контейнер для iframe */
 .video-card-iframe {
     position: relative;
     padding-bottom: 56.25%;
@@ -1405,7 +1403,6 @@ span.email-notes{
 }
 
 
-
 /*----------------------------------------*/
 /*  13.	Modal
 /*----------------------------------------*/
@@ -1419,18 +1416,15 @@ span.email-notes{
 .modal-content {
     max-width: 900px;
     max-height: 700px;
-    overflow-y: auto;
     width: 100%;
     background-color: var(--color-grey-dark);
     color: var(--color-light);
     border: none;
-    border-radius: 8px;
-    /* overflow: hidden; */
+    border-radius: 0px;
     font-size: 16px;
     line-height: 1.5;
 }
 
-/* Стиль кнопки закрытия */
 .modal-header .close {
     color: var(--color-light);
     opacity: 1;
@@ -1448,6 +1442,11 @@ span.email-notes{
     font-weight: bold;
     font-size: 20px;
     margin: 0;
+}
+
+.modal-body {
+    max-height: 640px;
+    overflow-y: auto;
 }
 
 .modal-body p {
@@ -1508,7 +1507,7 @@ span.email-notes{
     height: 0;
     overflow: hidden;
     margin-top: 20px;
-    border-radius: 8px;
+    /* border-radius: 8px; */
 }
 
 .video-container iframe {
@@ -1520,12 +1519,9 @@ span.email-notes{
 }
 
 
-
-
 /*----------------------------------------*/
 /*  14.	Btn
 /*----------------------------------------*/
-/* Стиль кнопки "Подробнее" */
 .btn-more, .btn-close {
     padding: 5px 10px;
     display: inline-block;
