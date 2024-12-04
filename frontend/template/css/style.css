@@ -62,7 +62,7 @@
 
 
 /*----------------------------------------*/
-/*  1.  Theme default CSS
+/*  2.  Theme default CSS
 /*----------------------------------------*/
 
 html, body {
@@ -207,7 +207,7 @@ body {
 .area-padding-2 {
     padding: 110px 0px 80px;
 }
-.section-headline h3 {
+.section-headline h3, .section-headline h4 {
     font-size: 38px;
     color: var(--color-heading);
     margin-bottom: 40px;
@@ -299,7 +299,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 }
 
 /*----------------------------------------*/
-/*  2. Header Area 
+/*  3. Header Area 
 /*----------------------------------------*/
 .header-area{
     background: transparent;
@@ -416,7 +416,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 }
 
 /*----------------------------------------*/
-/*  3. Mobile Menu Area
+/*  4. Mobile Menu Area
 /*----------------------------------------*/
 .mobile-menu-area {
     background: var(--color-secondary) none repeat scroll 0 0;
@@ -489,7 +489,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 } */
 
 /*--------------------------------*/
-/*  4. Intro Area
+/*  5. Intro Area
 /*--------------------------------*/
 .slide-area {
     /* background: rgba(0, 0, 0, 0) url(../img/background/s2.jpg) no-repeat scroll bottom center / cover; */
@@ -561,7 +561,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 }
 
 /*----------------------------------------*/
-/*  5. About Area 
+/*  6. About Area 
 /*----------------------------------------*/
 .about-images {
     margin-right: 15px;
@@ -647,8 +647,37 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 }
 
 /*----------------------------------------*/
-/* 6. Services area css
+/* 7. Services area css
 /*----------------------------------------*/
+.experience-img-container {
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.experience-img-container img {
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+    border: 1px solid var(--color-light);
+}
+
+.experience-item:hover .experience-img-container img {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .experience-img-container img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 479px) {
+    .experience-img-container img {
+        height: 150px;
+    }
+}
+
+
+
 .single-services {
     margin-bottom: 20px;
     position: relative;
@@ -707,7 +736,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 
 
 /*--------------------------------*/
-/* 7. Work Area
+/* 8. Work Area
 /*--------------------------------*/
 .awesome-img {
     width: 100%;
@@ -745,8 +774,8 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 .single-awesome-project {
     position: relative;
     overflow: hidden;
-    background-color: #fff;
-    border: 1px solid #ddd;
+    background-color: var(--color-light);
+    border: 1px solid var(--color-light);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     margin-bottom: 20px;
@@ -906,7 +935,16 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 
 
 /*----------------------------------------*/
-/*  8. Footer Area
+/*  9. Teacher
+/*----------------------------------------*/
+
+
+
+
+
+
+/*----------------------------------------*/
+/*  9. Footer Area
 /*----------------------------------------*/
 .footer-area {
     padding: 100px 0;
@@ -1292,7 +1330,7 @@ span.email-notes{
 } */
  
 /*----------------------------------------*/
-/*  11.	Animation  CSS
+/*  10.	Animation  CSS
 /*----------------------------------------*/
 .rotateme {
     animation-name: rotateme;
@@ -1356,7 +1394,7 @@ span.email-notes{
 
 
 /*----------------------------------------*/
-/*  12.	Video business cards
+/*  11.	Video business cards
 /*----------------------------------------*/
 .video-card {
     background: var(--color-light);
@@ -1404,7 +1442,7 @@ span.email-notes{
 
 
 /*----------------------------------------*/
-/*  13.	Modal
+/*  12.	Modal
 /*----------------------------------------*/
 .modal-dialog-centered {
     display: flex;
@@ -1520,7 +1558,7 @@ span.email-notes{
 
 
 /*----------------------------------------*/
-/*  14.	Btn
+/*  13.	Btn
 /*----------------------------------------*/
 .btn-more, .btn-close {
     padding: 5px 10px;
