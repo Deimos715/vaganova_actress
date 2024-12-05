@@ -677,6 +677,38 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 }
 
 
+.awards-container-img {
+    overflow: hidden;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.awards-container-img img {
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+    border: 1px solid var(--color-light);
+}
+
+.col-md-3:hover .awards-container-img img {
+    transform: scale(1.1);
+}
+
+/* Адаптивность для изображений */
+@media (max-width: 768px) {
+    .awards-container-img img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 479px) {
+    .awards-container-img img {
+        height: 150px;
+    }
+}
+
+
+
 
 .single-services {
     margin-bottom: 20px;
