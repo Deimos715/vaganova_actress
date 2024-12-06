@@ -23,6 +23,8 @@
         <link rel="stylesheet" href="css/vendor/slidemenu/slidemenu.css">
         <!-- meanmenu css -->
         <link rel="stylesheet" href="css/vendor/meanmenu/meanmenu.css">
+        <!-- swiper -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
         <!-- style css -->
         <link rel="stylesheet" href="css/style.css">
         <!-- responsive css -->
@@ -90,7 +92,7 @@
                 </div>	
             </header>
 
-            <div class="slide-area parallax-bg fix" data-stellar-background-ratio="0.6" style="background-position: 50% 100%; background: url('img/background/s2.jpg') no-repeat bottom center / cover;">
+            <!-- <div class="slide-area parallax-bg fix" data-stellar-background-ratio="0.6" style="background-position: 50% 100%; background: url('img/background/s2.jpg') no-repeat bottom center / cover;">
                 <div class="display-table">
                     <div class="display-table-cell">
                         <div class="container">
@@ -99,15 +101,94 @@
                                     <div class="slide-content text-center">
                                         <span class="title1">Актриса. Режиссер. Педагог. Постановщик сценических боев.</span>
                                         <h1 class="title2">Светлана Ваганова</h1>
-                                        <!-- <div class="slider-button">
-                                            <a class="slide-btn" href="#">Биография</a>
-                                        </div> -->
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div> -->
+
+            <!-- Слайдер -->
+            <div class="swiper-container slide-area">
+                <div class="swiper-wrapper">
+                    <!-- Слайд 1 -->
+                    <div class="swiper-slide parallax-bg fix" style="background: url('img/background/s1.jpg') no-repeat center center / cover;">
+                        <div class="display-table">
+                            <div class="display-table-cell">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="intro-content">
+                                            <div class="slide-content text-center">
+                                                <span class="title1">Актриса. Режиссер. Педагог. Постановщик сценических боев.</span>
+                                                <h1 class="title2">Светлана Ваганова</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Слайд 2 -->
+                    <div class="swiper-slide parallax-bg fix" style="background: url('img/background/s2.jpg') no-repeat center center / cover;">
+                        <div class="display-table">
+                            <div class="display-table-cell">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="intro-content">
+                                            <div class="slide-content text-center">
+                                                <span class="title1">Актриса. Режиссер. Педагог. Постановщик сценических боев.</span>
+                                                <h1 class="title2">Светлана Ваганова</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Слайд 3 -->
+                    <div class="swiper-slide parallax-bg fix" style="background: url('img/background/s3.jpg') no-repeat center center / cover;">
+                        <div class="display-table">
+                            <div class="display-table-cell">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="intro-content">
+                                            <div class="slide-content text-center">
+                                                <span class="title1">Актриса. Режиссер. Педагог. Постановщик сценических боев.</span>
+                                                <h1 class="title2">Светлана Ваганова</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Слайд 4 -->
+                    <div class="swiper-slide parallax-bg fix" style="background: url('img/background/s4.jpg') no-repeat center center / cover;">
+                        <div class="display-table">
+                            <div class="display-table-cell">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="intro-content">
+                                            <div class="slide-content text-center">
+                                                <span class="title1">Актриса. Режиссер. Педагог. Постановщик сценических боев.</span>
+                                                <h1 class="title2">Светлана Ваганова</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+
+                <div class="swiper-pagination"></div>
             </div>
 
             <div id="about" class="about-area bg-color area-padding">
@@ -116,9 +197,9 @@
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <div class="about-images">
                                 <div class="about-top-image">
-                                    <img class="ab-image" src="img/about/ab2.jpg" alt="">
+                                    <img class="ab-image" src="img/about/ab3.jpg" alt="">
                                         <div class="video-content">
-                                            <a href="https://www.youtube.com/watch?v=O33uuBh6nXA" class="video-play vid-zone">
+                                            <a href="#" class="video-play vid-zone">
                                                 <i class="fa fa-play"></i>
                                             </a>
                                         </div>
@@ -314,7 +395,7 @@
             </footer>
 
             <!-- jquery latest version -->
-            <script src="js/vendor/jquery/jquery-1.12.4.min.js"></script>
+            <script src="js/vendor/jquery/jQuery v2.2.4.min.js"></script>
             <!-- bootstrap js -->
             <script src="js/vendor/bootstrap/bootstrap.min.js"></script>
             <!-- Meanmenu js -->
@@ -327,6 +408,8 @@
             <script src="js/vendor/venobox/venobox.min.js"></script>
             <!-- Magnific js -->
             <script src="js/vendor/magnific/magnific.min.js"></script>
+            <!-- Swiper -->
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
             <!-- main js -->
             <script src="js/main.js"></script><a id="scrollUp" href="#top" style="position: fixed; z-index: 2147483647; display: none;">scroll top</a>
         
