@@ -294,8 +294,8 @@ body {
 	z-index: -1;
 }
 input, select, textarea, input[type="text"], input[type="date"], input[type="url"], input[type="email"], input[type="password"], input[type="tel"], button, button[type="submit"] {
-  -moz-appearance: none;
-  box-shadow: none !important;
+    -moz-appearance: none;
+    box-shadow: none !important;
 }
 
 /*----------------------------------------*/
@@ -319,7 +319,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
     background: var(--color-secondary);
 }
 .logo {
-  display: block;
+    display: block;
     height: 70px;
 }
 .logo a {
@@ -651,6 +651,13 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
     background: transparent;
     top: 25%;
 }
+
+/* @media (max-width: 479px) {
+    .video-play.vid-zone  {
+        top: 5%;
+    }
+} */
+
 .video-play::before {
     -webkit-animation-duration: 2s;
     animation-duration: 2s;
