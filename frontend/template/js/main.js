@@ -287,4 +287,16 @@
         });
     });
 
+
+    /*--------------------------
+    Preloader
+    ---------------------------- */
+    window.addEventListener('load', function() {
+        const preloader = document.querySelector('.preloader');
+        if (preloader) {
+            preloader.style.opacity = '0';
+            setTimeout(() => preloader.style.display = 'none', 500); // Smooth fade out
+        }
+    });
+
 })(jQuery); 
