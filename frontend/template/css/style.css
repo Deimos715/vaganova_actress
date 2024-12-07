@@ -1514,7 +1514,6 @@ video {
     border: none;
 }
 
-/* Адаптивность карточек */
 @media (max-width: 768px) {
     .video-card {
         margin-bottom: 20px;
@@ -1526,10 +1525,6 @@ video {
         margin-bottom: 20px;
         box-shadow: none;
     }
-
-    /* .video-card-iframe {
-        padding-bottom: 75%;
-    } */
 }
 
 
