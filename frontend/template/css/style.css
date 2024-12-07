@@ -1500,7 +1500,7 @@ span.email-notes{
 
 .video-card-iframe {
     position: relative;
-    padding-bottom: 56.25%; /* Сохраняем соотношение 16:9 */
+    padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
 }
@@ -1527,9 +1527,9 @@ video {
         box-shadow: none;
     }
 
-    .video-card-iframe {
+    /* .video-card-iframe {
         padding-bottom: 75%;
-    }
+    } */
 }
 
 
