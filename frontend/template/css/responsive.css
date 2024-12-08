@@ -65,12 +65,8 @@
     .suscribe-input button{
         font-size: 14px;
     }    
-        
-        
-        
-        
-        
-        
+    
+    
     }
     
     
@@ -213,12 +209,12 @@
     .container {width:300px}
         
     .logo {
-      height: inherit;
-      left: 0;
-      padding: 0;
-      position: absolute;
-      top: 5px;
-      z-index: 999999;
+        height: inherit;
+        left: 0;
+        padding: 0;
+        position: absolute;
+        top: 20px;
+        z-index: 999999;
     }
     .logo a {
         padding: 0;

@@ -92,7 +92,8 @@ html, body {
 a:focus {
 	outline:0px solid;
 }
-img {max-width:100%;
+img {
+    max-width:100%;
 	height:auto;
 }
 .fix {
@@ -306,6 +307,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
     position: absolute;
     top: 0px;
     left: 0;
+    height: 10%;
     width: 100%;
     height: auto;
     z-index: 9999;
@@ -418,11 +420,11 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 /*----------------------------------------*/
 /*  4. Mobile Menu Area
 /*----------------------------------------*/
-.mobile-menu-area {
+/* .mobile-menu-area {
     background: var(--color-secondary) none repeat scroll 0 0;
     padding: 10px 0px;
-    /* display: none;
-    visibility: hidden; */
+    display: none;
+    visibility: hidden;
 }
 .mean-container a.meanmenu-reveal span {
     background: var(--color-heading) none repeat scroll 0 0;
@@ -442,7 +444,6 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
     left: 5%;
     position: absolute;
     top: 12px;
-    /* text-transform: uppercase; */
     font-weight: 500;
 }
 .mean-container a.meanmenu-reveal {
@@ -485,7 +486,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 }
 .stick .main-menu ul.navbar-nav li.active a{
     color: var(--color-primary);
-}
+} */
 /* .slide-hamburger:hover .slide-hamburger-icon{
     margin: 5px 0px;
 } */
