@@ -56,16 +56,8 @@
    /*----------------------------
     jQuery MeanMenu
    ------------------------------ */
-    //    var mean_menu = $('nav#dropdown');
-    //    mean_menu.meanmenu();
-    $(document).ready(function () {
-        $('nav#dropdown').meanmenu({
-            meanMenuContainer: '.mobile-menu-area', // Контейнер для мобильного меню
-            meanScreenWidth: "768",                // Уровень, при котором меню переключается
-            meanRevealPosition: "right",           // Положение кнопки гамбургера
-            meanRemoveAttrs: true,                 // Убираем лишние атрибуты для мобильного меню
-        });
-    });
+       var mean_menu = $('nav#dropdown');
+       mean_menu.meanmenu();
        
    /*--------------------------
     scrollUp
