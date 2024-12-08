@@ -363,8 +363,10 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
     padding: 10px 10px 10px 10px;
     text-decoration: none;
     color: var(--color-accent);
-    /* text-transform: uppercase; */
     letter-spacing: 0.80px;
+}
+.slide-menu-item-active {
+    color: var(--color-primary);
 }
 .slide-dropdown-menu-item {
     line-height: 28px;
@@ -373,7 +375,6 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
     text-decoration: none;
     color: var(--color-heading);
     font-size: 13px;
-    /* text-transform: uppercase; */
 }
 .navbar {
     border: medium none;
