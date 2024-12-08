@@ -4,11 +4,11 @@
    /*----------------------------
     Navbar nav
    ------------------------------ */
-       var menu_btn = $('.menu-btn');
-       menu_btn.on("click", function () {
-           $(this).toggleClass("active");
-           $(".icon-header").toggleClass("active");
-       });
+    //    var menu_btn = $('.menu-btn');
+    //    menu_btn.on("click", function () {
+    //        $(this).toggleClass("active");
+    //        $(".icon-header").toggleClass("active");
+    //    });
        
    /*---------------------
     TOP Menu Stick
@@ -28,13 +28,13 @@
    Page Scroll
    ------------------------------ */
    
-       jQuery('a.page-scroll').on('click', function(event) {
-           var $anchor = $(this);
-             $('html, body').stop().animate({
-                 scrollTop: $($anchor.attr('href')).offset().top -60
-               }, 1500, 'easeInOutExpo');
-           event.preventDefault();
-       }); 
+    //    jQuery('a.page-scroll').on('click', function(event) {
+    //        var $anchor = $(this);
+    //          $('html, body').stop().animate({
+    //              scrollTop: $($anchor.attr('href')).offset().top -60
+    //            }, 1500, 'easeInOutExpo');
+    //        event.preventDefault();
+    //    }); 
           
    /*---------------------
      venobox
@@ -47,17 +47,25 @@
    /*--------------------------
    preloader
    ---------------------------- */	
-       $(window).on('load',function(){
-           var pre_loader = $('#preloader')
-       pre_loader.fadeOut('slow',function(){$(this).remove();});
-       });	
+    //    $(window).on('load',function(){
+    //        var pre_loader = $('#preloader')
+    //    pre_loader.fadeOut('slow',function(){$(this).remove();});
+    //    });	
        
        
    /*----------------------------
     jQuery MeanMenu
    ------------------------------ */
-       var mean_menu = $('nav#dropdown');
-       mean_menu.meanmenu();
+    //    var mean_menu = $('nav#dropdown');
+    //    mean_menu.meanmenu();
+    $(document).ready(function () {
+        $('nav#dropdown').meanmenu({
+            meanMenuContainer: '.mobile-menu-area', // Контейнер для мобильного меню
+            meanScreenWidth: "768",                // Уровень, при котором меню переключается
+            meanRevealPosition: "right",           // Положение кнопки гамбургера
+            meanRemoveAttrs: true,                 // Убираем лишние атрибуты для мобильного меню
+        });
+    });
        
    /*--------------------------
     scrollUp

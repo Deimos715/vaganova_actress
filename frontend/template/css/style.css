@@ -421,6 +421,8 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 .mobile-menu-area {
     background: var(--color-secondary) none repeat scroll 0 0;
     padding: 10px 0px;
+    /* display: none;
+    visibility: hidden; */
 }
 .mean-container a.meanmenu-reveal span {
     background: var(--color-heading) none repeat scroll 0 0;
