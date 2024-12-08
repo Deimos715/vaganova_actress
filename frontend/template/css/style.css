@@ -316,6 +316,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
     left: 0;
     position: fixed;
     top: 0;
+    height: 10%;
     width: 100%;
     z-index: 999999;
     background: var(--color-secondary);
